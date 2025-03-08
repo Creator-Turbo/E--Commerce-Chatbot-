@@ -34,7 +34,7 @@ The E-Commerce Chatbot enhances customer shopping experience by providing real-t
 
 Key Features:
 
-<!-- - Uses mistralai/Mistral-7B-Instruct-v0.3 for generating responses. -->
+- Uses mistralai/Mistral-7B-Instruct-v0.3 for generating responses.
 
 - AI-powered product search and recommendations.
 
@@ -102,34 +102,32 @@ To deploy the Flask web app on Render:
 - Deploy and access your app live.
 
 ## Directory Tree 
-```
-E--Commerce-Chatbot/
-├── .github/                   📁 GitHub workflows & configurations  
-├── data/                      📁 Dataset storage (user queries, product details, etc.)  
-├── experiments/               📁 Model training & experimentation logs  
-├── logs/                      📁 Application logs  
-├── chatbot/                   📁 Core chatbot logic  
-│   ├── __init__.py            📄 Package initialization  
-│   ├── chatbot.py             🤖 Chatbot conversation handling  
-│   ├── preprocess.py          🔄 Data preprocessing functions  
-│   ├── model.py               🧠 AI Model loading & inference  
-│   ├── utils.py               🛠️ Utility functions  
-├── static/                    📁 Static files (CSS, JS, images)  
-├── templates/                 📁 HTML templates for UI  
-│   ├── index.html             🖥️ Chatbot UI  
-├── venv/                      🐍 Virtual environment  
-├── .env                       🌍 Environment variables  
-├── .gitignore                 🚫 Files & folders to ignore in Git  
-├── LICENSE                    📜 License file  
-├── app.py                     🚀 Flask/FastAPI application entry point  
-├── README.md                  📖 Project documentation  
-├── requirements.txt           📦 Python dependencies  
-├── setup.py                   🔧 Installation setup  
-└── tests/                     📁 Unit & integration tests  
-    ├── test_chatbot.py        ✅ Test cases for chatbot functionality  
-    ├── test_api.py            ✅ Test cases for API endpoints  
- 
 
+```
+E_Commerce_Chatbot/  
+├── .github/                     📁 GitHub workflows & configurations  
+├── data/                        📁 Dataset storage (user queries, product details, etc.)  
+├── E_Commerce_Chatbot.egg-info/  📁 Package metadata  
+├── Experiments/                 📁 Model training & experimentation logs  
+├── logs/                        📁 Application logs  
+├── src/                         📁 Source code  
+│   ├── __init__.py              📄 Package initialization  
+│   ├── chatbot.py               🤖 Chatbot conversation handling  
+│   ├── preprocess.py            🔄 Data preprocessing functions  
+│   ├── model.py                 🧠 AI Model loading & inference  
+│   ├── utils.py                 🛠️ Utility functions  
+├── static/                      📁 Static files (CSS, JS, images)  
+├── templates/                   📁 HTML templates for UI  
+│   ├── index.html               🖥️ Chatbot UI  
+├── venv/                        🐍 Virtual environment  
+├── .env                         🌍 Environment variables  
+├── .gitignore                   🚫 Git ignored files  
+├── app.py                       🚀 Flask/FastAPI application entry point  
+├── LICENSE                      📜 License file  
+├── README.md                    📖 Project documentation  
+├── requirements.txt             📦 Python dependencies  
+├── setup.py                     🔧 Installation setup  
+├── template.py                  📝 Template-related logic               
 ```
 
 ## To Do
@@ -198,4 +196,9 @@ You are free to use, modify, and distribute this software under the terms of the
 
 ## Credits
 
-Special thanks to the contributors of using llms and other open-source projects that made this chatbot possible.
+Special thanks to the contributors and developers of large language models (LLMs) and open-source projects that made this chatbot possible.
+
+Mistral AI - Mistral-7B-Instruct-v0.3
+Open-source communities and researchers for their contributions to AI advancements
+
+Your support and innovation drive the future of AI-powered applications! 🚀
