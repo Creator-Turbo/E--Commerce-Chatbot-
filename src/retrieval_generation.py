@@ -19,27 +19,19 @@ os.environ['HUGGINGFACEHUB_API_TOKEN'] = HUGGINGFACEHUB_API_TOKEN
 def generation(vstore):
     retriever = vstore.as_retriever(search_kwargs={"k": 3})
 
-    # PRODUCT_BOT_TEMPLATE = """
-    # Your ecommercebot bot is an expert in product recommendations and customer queries.
-    # It analyzes product titles and reviews to provide accurate and helpful responses.
-    # Ensure your answers are relevant to the product context and refrain from straying off-topic.
-    # Your responses should be concise and informative.
-
-    # CONTEXT:
-    # {context}
-
-    # QUESTION: {question}
-
-    # YOUR ANSWER: 
     PRODUCT_BOT_TEMPLATE = """
-    Your ecommerce chatbot specializes in product recommendations and customer queries.
-    Analyze product titles and reviews to provide relevant, concise, and informative answers.
-    
+    Your ecommercebot bot is an expert in product recommendations and customer queries.
+    It analyzes product titles and reviews to provide accurate and helpful responses.
+    Ensure your answers are relevant to the product context and refrain from straying off-topic.
+    Your responses should be concise and informative.
+
     CONTEXT:
     {context}
-    
-    RESPONSE:
-    """
+
+    QUESTION: {question}
+
+    YOUR ANSWER: 
+  """
 
 
 
@@ -53,6 +45,8 @@ def generation(vstore):
     repo_id="mistralai/Mistral-7B-Instruct-v0.3",
     model_kwargs={"temperature": 1, "max_length": 180}
    )
+
+
 
 
     chain = (
